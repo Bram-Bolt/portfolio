@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --headingsize: 7vh;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    height: var(--headingsize);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mega {
+    height: calc(100vh - var(--headingsize));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.bloeb {
+    aspect-ratio: 1615 / 920;
+    margin: auto;
+    background: teal;
+    width: 90%;
+    max-width: 100%;
+}
