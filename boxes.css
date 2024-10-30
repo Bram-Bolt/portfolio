@@ -1,0 +1,57 @@
+.Y {
+    width: 1615px;
+    height: 920px;
+    background-color: #ef50ef5e; /* Brighter red */
+    position: absolute;
+}
+
+
+.A {
+    position: absolute;
+    width: 299px;
+    height: 227px;
+    background-color: #c2ef50; /* Brighter red */
+}
+
+.B {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #EC407A; /* Brighter pink */
+}
+
+.C {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #AB47BC; /* Brighter purple */
+    position: absolute;
+}
+
+.D {
+    width: 100px;
+    height: 100px;
+    background-color: #7E57C2; /* Brighter lavender */
+    position: absolute;
+}
+
+.E {
+    width: 100px;
+    height: 100px;
+    background-color: #42A5F5; /* Brighter blue */
+    position: absolute;
+}
+
+.F {
+    width: 100px;
+    height: 100px;
+    background-color: #f6a729; /* Brighter cyan */
+    position: absolute;
+}
+
+.G {
+    width: 100px;
+    height: 100px;
+    background-color: #66BB6A; /* Brighter green */
+    position: absolute;
+}
