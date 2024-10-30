@@ -23,3 +23,9 @@ body {
     width: 90%;
     max-width: 100%;
 }
+
+.bloeb img {
+    width: 100%;            
+    height: 100%;           
+    object-fit: cover;     
+}
