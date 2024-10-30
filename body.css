@@ -7,14 +7,6 @@ body {
     --headingsize: 7vh;
 }
 
-.navbar {
-    background-color: #333;
-    color: white;
-    height: var(--headingsize);
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
 
 .mega {
     height: calc(100vh - var(--headingsize));

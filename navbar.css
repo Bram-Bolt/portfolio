@@ -1,0 +1,28 @@
+.navbar {
+    background-color: blueviolet;
+    height: var(--headingsize);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    font-family: 'JetBrains Mono', monospace; /* Apply JetBrains Mono only to the navbar */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar nav ul {
+    font-size: 25px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    color: 
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+}
