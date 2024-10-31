@@ -45,6 +45,19 @@ body {
     display: block;
 }
 
+
+.element:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 217, 255, 0.409); 
+    z-index: 10; 
+    overflow: hidden;
+}
+
 /* Individual Element Styles */
 
 .A {
