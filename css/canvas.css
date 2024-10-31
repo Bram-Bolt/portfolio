@@ -4,7 +4,7 @@
     --canvas-width: 1615;
     --canvas-height: 920;
     --canvas-ratio: calc(var(--canvas-width) / var(--canvas-height));
-    --viewport-width: 90vw;
+    --viewport-width: 85vw;
     --canvas-scale: calc(var(--viewport-width) / var(--canvas-width));
 }
 
@@ -53,9 +53,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 217, 255, 0.409); 
+    background-color: #007bff69; 
     z-index: 10; 
     overflow: hidden;
+    pointer-events: none;
 }
 
 /* Individual Element Styles */
@@ -88,15 +89,83 @@ body {
     border-radius:20px;
 }
 
-.B {
+
+
+.big-card-background {
     --width: 751;
     --height: 431;
     --margin-left: 498;
     --margin-top: 70;
     background-color: #F4F1E7;
-
     z-index: 4;
 }
+
+.big-card-content {
+    --width: 751;
+    --height: 377;
+    --margin-left: 498;
+    --margin-top: 70;
+
+    z-index: 9;
+    overflow: auto;
+}
+
+
+.big-card-content p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+
+}
+
+.big-card-content .small-text {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+
+.big-card-background:hover::before {
+    all: initial;
+}
+
+.big-card-content:hover::before {
+    all: initial;
+}
+
+/* Style for Logo */
+
+.big-card-content img {
+    margin:auto;
+    margin-top: 10px;
+    height: auto;
+    width: 5vw;
+
+}
+
+/* Style for Badges */
+.badges {
+
+    margin: auto;
+    display: flex;              /* Enable flexbox layout */
+    justify-content: center;    /* Center items horizontally */
+    align-items: center;        /* Center items vertically */
+    flex-wrap: wrap;           /* Allow items to wrap if needed */
+}
+
+.badges img {
+    all: initial;
+    height: 30px; /* Sets uniform height */
+    width: auto;
+    margin: 5px;   /* Add margin for spacing between images */
+}
+
 
 .E {
     --width: 394;
@@ -115,7 +184,7 @@ body {
     z-index: 6;
 }
 
-.C {
+.miffy-stamp {
     --width: 267;
     --height: 199;
     --margin-left: 1211;

@@ -3,13 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-family: 'JetBrains Mono', monospace; 
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     padding: 0;
     margin: 0;
 }
 
 .navbar nav ul {
-    font-size: 25px;
+    font-size: 1.5rem;
     display: flex;
     list-style-type: none;
     padding: 0;
