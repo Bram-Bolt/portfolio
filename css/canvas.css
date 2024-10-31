@@ -91,22 +91,22 @@ body {
 
 
 
-.big-card-background {
+/* .big-card-background {
     --width: 751;
     --height: 431;
     --margin-left: 498;
     --margin-top: 70;
     background-color: #F4F1E7;
     z-index: 4;
-}
+} */
 
 .big-card-content {
     --width: 751;
-    --height: 377;
+    --height: 431;
     --margin-left: 498;
     --margin-top: 70;
-
-    z-index: 9;
+    background-color: #F4F1E7;
+    z-index: 5;
     overflow: auto;
 }
 
@@ -130,7 +130,7 @@ body {
     font-size: 1em;
     margin: 0;
 }
-
+/* 
 .big-card-background:hover::before {
     all: initial;
 
@@ -139,7 +139,7 @@ body {
 .big-card-content:hover::before {
     all: initial;
 
-}
+} */
 
 /* Style for Logo */
 
