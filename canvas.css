@@ -33,13 +33,14 @@ body {
 /* Shared Class for Elements A-E */
 .element {
     position: absolute;
-    opacity: 50%;
     width: calc(var(--width) * var(--canvas-scale));
     aspect-ratio: var(--width) / var(--height);
     margin-left: calc(var(--margin-left) * var(--canvas-scale));
     margin-top: calc(var(--margin-top) * var(--canvas-scale));
 }
 
+
+/* Individual Element Styles */
 /* Individual Element Styles */
 .A {
     --width: 410;
@@ -47,6 +48,34 @@ body {
     --margin-left: 55;
     --margin-top: 0;
     background-color: aquamarine;
+    z-index: 1; /* Bottommost */
+}
+
+.D {
+    --width: 507;
+    --height: 310;
+    --margin-left: 196;
+    --margin-top: 373;
+    background-color: lightgreen;
+    z-index: 2;
+}
+
+.G {
+    --width: 545;
+    --height: 397;
+    --margin-left: 1070;
+    --margin-top: 377;
+    background-color: lightyellow;
+    z-index: 3;
+}
+
+.B {
+    --width: 751;
+    --height: 431;
+    --margin-left: 498;
+    --margin-top: 70;
+    background-color: lightcoral;
+    z-index: 4;
 }
 
 .E {
@@ -55,7 +84,27 @@ body {
     --margin-left: 0;
     --margin-top: 556;
     background-color: orange;
+    z-index: 5;
 }
+
+.F {
+    --width: 389;
+    --height: 471;
+    --margin-left: 563;
+    --margin-top: 447;
+    background-color: lightpink;
+    z-index: 6;
+}
+
+.C {
+    --width: 267;
+    --height: 199;
+    --margin-left: 1211;
+    --margin-top: 12;
+    background-color: lightblue;
+    z-index: 7; /* Topmost */
+}
+
 
 /* Blueprint */
 .blueprint {
