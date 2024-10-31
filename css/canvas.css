@@ -19,13 +19,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
 }
 
 .canvas {
     aspect-ratio: var(--canvas-width) / var(--canvas-height);
     margin: auto;
-    background: teal;
     width: var(--viewport-width);
     max-width: 100%;
 }
@@ -48,12 +46,14 @@ body {
 }
 
 /* Individual Element Styles */
+
 .A {
-    --width: 410;
-    --height: 313;
-    --margin-left: 55;
-    --margin-top: 0;
-    background-color: aquamarine;
+    --width: 308;
+    --height: 235;
+    --margin-left: 65;
+    --margin-top: 3;
+    box-shadow:0 0 40px -10px rgba(0,0,0,.3), 0 0 25px -15px rgba(0,0,0,.2);
+    border-radius:20px;
     z-index: 1; /* Bottommost */
 }
 
@@ -62,7 +62,6 @@ body {
     --height: 310;
     --margin-left: 196;
     --margin-top: 373;
-    background-color: lightgreen;
     z-index: 2;
 }
 
@@ -71,8 +70,9 @@ body {
     --height: 397;
     --margin-left: 1070;
     --margin-top: 377;
-    background-color: lightyellow;
     z-index: 3;
+    box-shadow:0 0 40px -10px rgba(0,0,0,.3), 0 0 25px -15px rgba(0,0,0,.2);
+    border-radius:20px;
 }
 
 .B {
@@ -80,7 +80,8 @@ body {
     --height: 431;
     --margin-left: 498;
     --margin-top: 70;
-    background-color: lightcoral;
+    background-color: #F4F1E7;
+
     z-index: 4;
 }
 
@@ -89,7 +90,7 @@ body {
     --height: 310;
     --margin-left: 0;
     --margin-top: 556;
-    background-color: orange;
+    background-color: #F4F1E7;
     z-index: 5;
 }
 
@@ -98,7 +99,6 @@ body {
     --height: 471;
     --margin-left: 563;
     --margin-top: 447;
-    background-color: lightpink;
     z-index: 6;
 }
 
@@ -111,16 +111,3 @@ body {
     z-index: 7; /* Topmost */
 }
 
-
-/* Blueprint */
-.blueprint {
-    position: absolute;
-    background-color: azure;
-    width: 90vw;            
-}
-
-.blueprint img {
-    width: 100%;            
-    height: 100%;           
-    object-fit: cover;   
-}
