@@ -1,5 +1,4 @@
 .navbar {
-    background-color: blueviolet;
     height: var(--headingsize);
     display: flex;
     justify-content: center;
@@ -22,6 +21,18 @@
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: white; 
+    color: #000; 
     font-weight: bold;
+}
+
+
+.navbar nav ul li a:hover {
+    color: #007BFF; 
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+.navbar nav ul li a:active {
+    color: #0056b3; 
+    text-decoration: underline; 
 }
