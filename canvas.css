@@ -1,0 +1,71 @@
+:root {
+    --headingsize: 7vh;
+
+    --canvas-width: 1615;
+    --canvas-height: 920;
+    --canvas-ratio: calc(var(--canvas-width) / var(--canvas-height));
+    --viewport-width: 90vw;
+    --canvas-scale: calc(var(--viewport-width) / var(--canvas-width));
+}
+
+/* Main Frame */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main_frame {
+    height: calc(100vh - var(--headingsize));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.canvas {
+    aspect-ratio: var(--canvas-width) / var(--canvas-height);
+    margin: auto;
+    background: teal;
+    width: var(--viewport-width);
+    max-width: 100%;
+}
+
+/* Shared Class for Elements A-E */
+.element {
+    position: absolute;
+    opacity: 50%;
+    width: calc(var(--width) * var(--canvas-scale));
+    aspect-ratio: var(--width) / var(--height);
+    margin-left: calc(var(--margin-left) * var(--canvas-scale));
+    margin-top: calc(var(--margin-top) * var(--canvas-scale));
+}
+
+/* Individual Element Styles */
+.A {
+    --width: 410;
+    --height: 313;
+    --margin-left: 55;
+    --margin-top: 0;
+    background-color: aquamarine;
+}
+
+.E {
+    --width: 394;
+    --height: 310;
+    --margin-left: 0;
+    --margin-top: 556;
+    background-color: orange;
+}
+
+/* Blueprint */
+.blueprint {
+    position: absolute;
+    background-color: azure;
+    width: 90vw;            
+}
+
+.blueprint img {
+    width: 100%;            
+    height: 100%;           
+    object-fit: cover;   
+}
