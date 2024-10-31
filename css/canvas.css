@@ -40,7 +40,13 @@ body {
 }
 
 
-/* Individual Element Styles */
+.element img {
+    width: 100%;            
+    height: 100%;           
+    object-fit: fill;  
+    display: block;
+}
+
 /* Individual Element Styles */
 .A {
     --width: 410;
@@ -101,7 +107,7 @@ body {
     --height: 199;
     --margin-left: 1211;
     --margin-top: 12;
-    background-color: lightblue;
+
     z-index: 7; /* Topmost */
 }
 
