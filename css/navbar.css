@@ -1,5 +1,5 @@
 .navbar {
-    height: var(--heading-size);
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -17,6 +17,7 @@
     display: flex;
     list-style-type: none;
     padding: 0;
+
 }
 
 .navbar nav ul li {
@@ -39,4 +40,20 @@
 .navbar nav ul li a:active {
     color: #0056b3; 
     text-decoration: underline; 
+}
+
+
+@media (max-width: 768px) {
+    .navbar nav ul {
+        font-size: 1.2rem; 
+    }
+    .navbar nav ul li {
+        margin: 0 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar nav ul {
+        font-size: 0.8rem; 
+    }
 }
