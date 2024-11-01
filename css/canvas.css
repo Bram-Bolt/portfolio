@@ -9,18 +9,11 @@
     --box-shadow: 0 0 40px -10px rgba(0, 0, 0, .3), 0 0 25px -15px rgba(0, 0, 0, .2);
 }
 
-/* Main Frame */
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
 
-.main-frame {
-    height: calc(100vh - var(--heading-size));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .canvas {
     aspect-ratio: var(--canvas-width) / var(--canvas-height);

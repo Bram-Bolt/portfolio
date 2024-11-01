@@ -9,15 +9,14 @@ body, html {
 } 
 
 
-/* Centered container with max-width */
 .container {
     max-width: 500px;
-    margin: 20px auto;  /* Center align with auto horizontal margins */
+    margin: 20px auto;  
 
 
 }
 
-/* Ensure all elements use box-sizing for better layout control */
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
