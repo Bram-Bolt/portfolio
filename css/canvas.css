@@ -91,15 +91,7 @@ body {
 
 
 
-/* .big-card-background {
-    --width: 751;
-    --height: 431;
-    --margin-left: 498;
-    --margin-top: 70;
-    background-color: #F4F1E7;
-    z-index: 4;
-} */
-
+/* BIG CARD */
 .big-card-content {
     --width: 751;
     --height: 431;
@@ -116,8 +108,8 @@ body {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 25px;
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
 
 }
 
@@ -127,19 +119,10 @@ body {
     font-weight: 700;
     font-style: italic;
     text-align: center;
-    font-size: 1em;
+    font-size: 1vw;
     margin: 0;
 }
-/* 
-.big-card-background:hover::before {
-    all: initial;
 
-}
-
-.big-card-content:hover::before {
-    all: initial;
-
-} */
 
 /* Style for Logo */
 
@@ -163,14 +146,13 @@ body {
 
 .badges img {
     all: initial;
-    height: 30px; /* Sets uniform height */
+    height: 2vw; /* Sets uniform height */
     width: auto;
     margin: 5px;   /* Add margin for spacing between images */
 }
 
-/* .small-card:hover::before {
-    all: initial;
-} */
+
+/* SMALL CARD */
 
 .small-card {
     --width: 394;
@@ -183,7 +165,18 @@ body {
 
 }
 .small-card p {
-    margin-left: 10px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+    font-size: 1vw;
+}
+
+.small-card h2 {
+    text-align: center;
+    font-family: "Arial", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.5vw;
 }
 
 
@@ -199,12 +192,6 @@ body {
     cursor: pointer; 
 }
 
-.small-card h2 {
-    text-align: center;
-    font-family: "Arial", monospace;
-    font-optical-sizing: auto;
-    font-weight: 700;
-}
 
 .F {
     --width: 389;
