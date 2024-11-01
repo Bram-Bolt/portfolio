@@ -1,0 +1,24 @@
+/* Apply basic styling to the entire page */
+body, html {
+    line-height: 1.6;
+    margin: 1%; 
+    margin-top: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+} 
+
+
+/* Centered container with max-width */
+.container {
+    max-width: 500px;
+    margin: 20px auto;  /* Center align with auto horizontal margins */
+
+
+}
+
+/* Ensure all elements use box-sizing for better layout control */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
