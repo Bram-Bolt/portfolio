@@ -1,5 +1,5 @@
 .navbar {
-    height: var(--headingsize);
+    height: var(--heading-size);
     display: flex;
     justify-content: center;
     align-items: center; 

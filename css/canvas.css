@@ -1,11 +1,12 @@
 :root {
-    --headingsize: 7vh;
+    --heading-size: 7vh;
 
     --canvas-width: 1615;
     --canvas-height: 920;
     --canvas-ratio: calc(var(--canvas-width) / var(--canvas-height));
     --viewport-width: 85vw;
     --canvas-scale: calc(var(--viewport-width) / var(--canvas-width));
+    --box-shadow: 0 0 40px -10px rgba(0, 0, 0, .3), 0 0 25px -15px rgba(0, 0, 0, .2);
 }
 
 /* Main Frame */
@@ -14,8 +15,8 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.main_frame {
-    height: calc(100vh - var(--headingsize));
+.main-frame {
+    height: calc(100vh - var(--heading-size));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,14 +38,12 @@ body {
     margin-top: calc(var(--margin-top) * var(--canvas-scale));
 }
 
-
 .element img {
-    width: 100%;            
-    height: 100%;           
-    object-fit: fill;  
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
     display: block;
 }
-
 
 .element:hover::before {
     content: '';
@@ -53,25 +52,24 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #007bff69; 
-    z-index: 10; 
+    background-color: #007bff69;
+    z-index: 10;
     overflow: hidden;
     pointer-events: none;
 }
 
 /* Individual Element Styles */
-
-.A {
+.computer-angel {
     --width: 308;
     --height: 235;
     --margin-left: 65;
     --margin-top: 3;
-    box-shadow:0 0 40px -10px rgba(0,0,0,.3), 0 0 25px -15px rgba(0,0,0,.2);
-    border-radius:20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
     z-index: 1; /* Bottommost */
 }
 
-.D {
+.apple {
     --width: 507;
     --height: 310;
     --margin-left: 196;
@@ -79,17 +77,15 @@ body {
     z-index: 2;
 }
 
-.G {
+.terminal-fire {
     --width: 545;
     --height: 397;
     --margin-left: 1070;
     --margin-top: 377;
     z-index: 3;
-    box-shadow:0 0 40px -10px rgba(0,0,0,.3), 0 0 25px -15px rgba(0,0,0,.2);
-    border-radius:20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
 }
-
-
 
 /* BIG CARD */
 .big-card-content {
@@ -102,15 +98,12 @@ body {
     overflow: auto;
 }
 
-
 .big-card-content p {
-
     font-weight: 400;
     font-style: normal;
     text-align: center;
     font-size: 1.5vw;
     margin-bottom: 1.5vw;
-
 }
 
 .big-card-content .small-text {
@@ -123,37 +116,31 @@ body {
     margin: 0;
 }
 
-
 /* Style for Logo */
-
 .big-card-content img {
-    margin:auto;
+    margin: auto;
     margin-top: 10px;
     height: auto;
     width: 5vw;
-
 }
 
 /* Style for Badges */
-.badges {
-
+.big-card-content .badges {
     margin: auto;
-    display: flex;              /* Enable flexbox layout */
-    justify-content: center;    /* Center items horizontally */
-    align-items: center;        /* Center items vertically */
-    flex-wrap: wrap;           /* Allow items to wrap if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.badges img {
+.big-card-content .badges img {
     all: initial;
-    height: 2vw; /* Sets uniform height */
+    height: 2vw;
     width: auto;
-    margin: 5px;   /* Add margin for spacing between images */
+    margin: 5px;
 }
-
 
 /* SMALL CARD */
-
 .small-card {
     --width: 394;
     --height: 310;
@@ -161,9 +148,9 @@ body {
     --margin-top: 556;
     background-color: #F4F1E7;
     z-index: 5;
-    overflow: scroll
-
+    overflow: scroll;
 }
+
 .small-card p {
     margin-left: 1vw;
     margin-top: 1vw;
@@ -179,21 +166,18 @@ body {
     font-size: 1.5vw;
 }
 
-
 .small-card a {
     text-decoration: none;
-    color: #000; 
+    color: #000;
 }
-
 
 .small-card a:hover {
-    color: #007BFF; 
-    text-decoration: underline; 
-    cursor: pointer; 
+    color: #007BFF;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-
-.F {
+.raspberry-pi {
     --width: 389;
     --height: 471;
     --margin-left: 563;
@@ -206,7 +190,5 @@ body {
     --height: 199;
     --margin-left: 1211;
     --margin-top: 12;
-
     z-index: 7; /* Topmost */
 }
-
