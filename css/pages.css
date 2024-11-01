@@ -17,7 +17,26 @@ body, html {
 }
 
 
+.container h1 {
+    margin: 1px;
+
+}
+.container h2 {
+    margin: 1px;
+
+}
+
+.container h3 {
+    margin: 1px;
+
+}
+.container ul {
+    margin: 1px;
+    margin-bottom: 5px;
+}
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+
 
