@@ -59,7 +59,8 @@ body {
     --margin-top: 3;
     box-shadow: var(--box-shadow);
     border-radius: 20px;
-    z-index: 1; /* Bottommost */
+    z-index: 1;
+    /* Bottommost */
 }
 
 .apple {
@@ -183,5 +184,6 @@ body {
     --height: 199;
     --margin-left: 1211;
     --margin-top: 12;
-    z-index: 7; /* Topmost */
+    z-index: 7;
+    /* Topmost */
 }

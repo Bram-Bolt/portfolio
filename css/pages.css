@@ -1,18 +1,19 @@
 /* Apply basic styling to the entire page */
 
-body, html {
+body,
+html {
     line-height: 1.6;
-    margin: 1%; 
+    margin: 1%;
     margin-top: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-} 
+}
 
 
 .container {
     max-width: 500px;
-    margin: 20px auto;  
+    margin: 20px auto;
 
 
 }
@@ -22,6 +23,7 @@ body, html {
     margin: 1px;
 
 }
+
 .container h2 {
     margin: 1px;
 
@@ -31,13 +33,14 @@ body, html {
     margin: 1px;
 
 }
+
 .container ul {
     margin: 1px;
     margin-bottom: 5px;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
-
-
-
