@@ -71,6 +71,17 @@ body {
     z-index: 2;
 }
 
+.herringbone {
+    --width: 200;
+    --height: 85;
+    --margin-left: 345;
+    --margin-top: 240;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+}
+
+
 .terminal-fire {
     --width: 545;
     --height: 397;
@@ -137,7 +148,7 @@ body {
 /* SMALL CARD */
 .small-card {
     --width: 394;
-    --height: 310;
+    --height: 290;
     --margin-left: 0;
     --margin-top: 556;
     background-color: #F4F1E7;
